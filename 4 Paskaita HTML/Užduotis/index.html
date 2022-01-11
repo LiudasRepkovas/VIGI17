@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        header, article, footer {
+            background: lightgray;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        header > * {
+            display: inline-block;
+        }
+        nav {
+            margin-left: 100px;
+        }
+        header, footer {
+            text-align: center;
+        }
+
+        .alignCenter {
+            text-align: center;
+        }
+        
+        .article2 section.content > *{
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+        }
+
+        .article2 section.content img, .article2 section.content p {
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+        }
+
+        .article3 section {
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+        }
+
+        .article3 img {
+            width: 100%
+        }
+
+    </style>
+    <body>
+        <header>
+            <img width="50px" src="images/logo.png" alt="Logo"/>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <article class="alignCenter">
+                <h1>Super headline</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatem aspernatur repudiandae!</p>
+            </article>
+            <article class="article2">
+                <section class="headline">
+                    <h2>Headline</h2>
+                </section>
+                <section class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim dolorem voluptatibus eligendi dignissimos reiciendis accusantium ad vero aut repellat necessitatibus expedita dicta, facere quia esse eaque culpa! Pariatur fuga, debitis sed id sit commodi velit non labore iure, corporis omnis saepe, deserunt sint. Molestiae rerum illum reprehenderit amet nam sint, quasi natus aliquid tempore velit dolorem, saepe vero deserunt?
+                    </p><img src="./images/article image.png">
+                </section>
+            </article>
+            <article class="article3">
+                <section>
+                    <img src="./images/article image.png">
+                </section><section>
+                    <h2>Headline</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>
+                <a href="#">Additional Information 1</a>
+                <a href="#">Additional Information 2</a>
+                <a href="#">Additional Information 3</a>
+            </p>
+            <h4>All rights reserved</h4>
+        </footer>
+    </body>
+</html>

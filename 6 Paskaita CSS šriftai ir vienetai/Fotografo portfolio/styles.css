@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    display: inline-block;
+    margin-top: 30vh;
+    color: #ffffff;
+    font-size: 10rem;
+    margin-bottom: 5vh;
+}
+
+section {
+    height: 100vh;
+    text-align: center;
+}
+
+a {
+    /* naudojam display flex teksto centravimui */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* nustatom automatines parastes kad centruotume elementa puslapyje*/
+    margin: 0 auto;
+
+    height: 10rem;
+    width: 25rem;
+    border: 0.25rem solid #ffffff;
+    background: #acacac;
+    font-size: 3rem;
+    color: #ffffff;
+
+    /* nuimam teksto pabraukima */
+    text-decoration: none;
+}
+
+a:hover {
+    background: #c4c4c4;
+}
+
+a:active {
+    background: #9b9b9b;
+}
+
+section.first {
+    background-image: url('./images/horizontali.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+section.second img {
+
+    /* nustatom nuotrauku auksti ir ploti */
+    width: 33.33%;
+    height: 100%;
+
+    /* padaro, kad nuotraukos neišsitampytų */
+    object-fit: cover;
+    object-position: center;
+}

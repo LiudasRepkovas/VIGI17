@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="off">
+        <div class="formGroup">
+            <label for="nameInput">Vardas:</label>
+            <input id="nameInput" name="nameInput" type="text" required maxlength="10" minlength="3" placeholder="Vardas">
+        </div>
+        <div class="formGroup">
+            <label for="passwordInput">Slaptažodis:</label>
+            <input id="passwordInput" name="passwordInput" type="password" required placeholder="Slaptažodis">
+        </div>
+        <div class="formGroup">
+            <label for="termsAndServicesInput">Sutinku su taisyklėm: </label>
+            <input id="termsAndServicesInput" name="termsInput" value="yes" type="checkbox" checked/>
+        </div>
+        
+        <div class="formGroup">
+            Lytis:
+            <label for="genderInputMale">Vyras</label>
+            <input name="genderInput" id="genderInputMale" value="male" type="radio"/>
+            <label for="genderInputFemale">Moteris</label>
+            <input name="genderInput" id="genderInputFemale" checked value="female" type="radio"/>
+        </div>
+
+        <div class="formGroup">
+            <input type="button" value="Nieko nedarau"/>
+        </div>
+
+        <div class="formGroup">
+            <label for="dateInput">Gimimo data: </label>
+            <input id="dateInput" name="dateInput" type="date"/>
+        </div>
+
+        <div class="formGroup">
+            <label for="fileInput">Paso kopija: </label>
+            <input id="fileInput" name="fileInput" type="file"/>
+        </div>
+
+        <div class="formGroup">
+            <label for="kidsInput">Kiek turite vaikų: </label>
+            <input id="kidsInput" name="kidsInput" min="0" max="22" type="number"/>
+        </div>
+
+        <div class="formGroup">
+            <label for="aboutMeInput">Papasakokit apie save: </label><br>
+            <textarea id="aboutMeInput" name="aboutMeInput"></textarea>
+        </div>
+
+        <div class="formGroup">
+            <input type="submit" value="Pateikti"/>
+            <input type="reset" value="Išvalyti"/>
+        </div>
+
+    </form>
+</body>
+</html>

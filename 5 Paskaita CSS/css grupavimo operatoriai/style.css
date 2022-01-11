@@ -1,0 +1,12 @@
+.vidinis{
+    border: 4px solid black;
+    margin: 5px;
+}
+
+.pagrindinis {
+    color: hsl(0, 100%, 50%) ;
+}
+
+.textAlignCenter{
+    text-align: center;
+}

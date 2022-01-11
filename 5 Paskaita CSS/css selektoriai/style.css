@@ -1,0 +1,30 @@
+.raudonas {
+    background: red;
+}
+
+.geltonas {
+    background: yellow;
+}
+
+.raudonas h1 {
+    color: blue;
+}
+
+.raudonas h1:hover {
+    color:violet;
+}
+
+.geltonas p {
+    color:tomato;
+}
+
+
+.geltonas p::first-line {
+    color: green;
+    background: blue;
+}
+
+img[src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"]{
+    background: black;
+    border: 5px dotted red;
+}

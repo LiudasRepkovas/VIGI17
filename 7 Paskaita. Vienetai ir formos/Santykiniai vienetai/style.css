@@ -1,0 +1,47 @@
+div {
+    border: 0.125rem solid black;
+    margin: 0.5rem;
+}
+
+.emparent {
+    /* 32px, nes root elemento font size yra 16px */
+    font-size: 2em; 
+}
+
+.emparent p {
+    /* 64px, nes emparent font size yra 32px */
+    font-size: 2em;
+}
+.emparent p span {
+    /* 128px, nes p font size yra 64px */
+    font-size: 2em;
+}
+
+.remparent {
+    /* 32px, nes root elemento font size yra 16px */
+    font-size: 2rem;
+}
+
+.remparent p {
+    /* 32px, nes root elemento font size yra 16px */
+    font-size: 2rem;
+}
+
+.remparent p span {
+    /* 64px, nes p font size yra 64px */
+    font-size: 4rem;
+}
+
+.imgparent{
+    width: 80%;
+}
+
+.imgparent img {
+    width: 50%;
+}
+
+.paddingmargin{
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid black;
+}

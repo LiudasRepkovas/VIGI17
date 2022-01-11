@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    background: rgb(255, 221, 221);
+    min-height: 100vh;
+    padding: 1rem 0;
+}
+
+section, .block5 {
+    margin-top: 0;
+    margin-bottom: auto;
+    margin-left: 1rem;
+    margin-right: auto;
+
+    /* visos = 1rem */
+    margin: 1rem;
+
+    /* top, bottom = 1rem; left, right = 2rem */
+    margin: 1rem 2rem;
+
+    /* top = 1rem; left,right = auto; bottom = 2rem */
+    margin: 1rem auto 2rem;
+    
+    /* top = 0 right = auto bottom = 1rem left = auto */
+    margin: 0 auto 1rem auto;
+}
+
+.contentFill {
+    background: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.block1, .block2 {
+    background: rgb(221, 231, 255);
+    height: 18.75rem;
+    width: 18.75rem;
+    border: 0.25rem solid rgb(255, 255, 255);
+}
+
+.block1 {
+    padding: 1.875rem;
+}
+
+.block2 {
+    padding: 3.125rem;
+}
+
+.block3 {
+    background: rgb(228, 255, 221);
+    width: 45%;
+    height: 6.25rem;
+}
+
+.block4 {
+    background: rgb(255, 254, 221);
+    height: 15.625rem;
+    width: 12.5rem;
+    padding: 1rem;
+    border: 0.3125rem solid rgb(255, 255, 255);
+}
+
+.block4 img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.block5 {
+    display: block;
+    background: rgb(245, 221, 255);
+    width: 20rem;
+    height: 5rem;
+    padding: 1rem;
+    border: 0.25rem solid white;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.block5:hover {
+    opacity: 0.8;
+}
