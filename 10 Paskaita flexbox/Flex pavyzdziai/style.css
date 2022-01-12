@@ -1,0 +1,30 @@
+.flexParent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    border: 0.125rem solid black;
+    margin: 0.5rem;
+    height: 20rem;
+}
+
+.flexChild {
+    border: 0.125rem solid red;
+    padding: 1rem;
+}
+
+.first {
+    align-self:stretch;
+    order: 1;
+    flex-grow: 0;
+    flex-basis: 5rem;
+    flex-shrink: 1;
+    flex: 0 1 5rem;
+}
+.second {
+    flex-grow: 1;
+}
