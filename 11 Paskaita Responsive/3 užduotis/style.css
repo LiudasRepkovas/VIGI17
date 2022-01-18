@@ -14,7 +14,7 @@ header {
 }
 
 header img {
-    width: 20rem;
+    width: 12rem;
 }
 
 main {
@@ -31,9 +31,113 @@ main > div > img {
 
 main > div {
     flex: 0 1 calc(50% - 1rem);
-    height: 35rem;
+    height: 18rem;
 }
 
 .menuButton {
     font-size: 2rem;
+}
+
+.links {
+    display: none;
+}
+
+.menuButton:focus + .links {
+    display: flex;
+    flex: 1 0 100%;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    min-height: 50%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.menuButton:focus + .links > * {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 1rem
+}
+
+.menuButton:focus + .links .pages > * {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+    color: #151515;
+    font-size: 0.7rem;
+}
+
+.menuButton:focus + .links .bookNow {
+    flex-basis: 10rem;;
+}
+
+.links .bookNow {
+    background-color: #b6b6b6;
+    color: white;
+    padding: 1rem 1.2rem;
+}
+
+
+@media screen and (min-width: 45rem) {
+    
+    .links a:hover {
+        opacity: 0.4;
+    }
+    .links {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 1.3rem;
+        align-items: center;
+    }
+
+    .links .social, .links .pages {
+        display: flex;
+        gap: 1rem
+    }
+
+    nav {
+        flex-grow: 1;
+    }
+    .menuButton {
+        display: none;
+    }
+
+
+    .links .pages {
+        letter-spacing: 0.1rem;
+    }
+
+    main > div {
+        flex-basis: calc(33.33% - 4rem / 3);
+    }
+    
+
+}
+@media screen and (min-width: 70rem) {
+    main > div {
+        flex-basis: calc(20% - 8rem / 5);
+    }
+
+    .links {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    .links .social, .links .pages {
+        display: flex;
+        gap: 1.5rem
+    }
 }
