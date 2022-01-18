@@ -1,0 +1,72 @@
+.square {
+    height: 10rem;
+    width: 10rem;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+}
+
+.square:hover {
+    animation-name: pasisukaIrKeiciaSpalva;
+    animation-duration: 3s;
+
+    /* animacijos pavadinimas, trukme, greicio funkcija, pakartojimu skaicius, animacijos kryptis */
+    animation: pasisukaIrKeiciaSpalva 3s linear 1 normal forwards;
+
+    background-color: yellow;
+    transform: rotate(0.5turn);
+}
+
+@keyframes pasisukaIrKeiciaSpalva {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    33% {
+        transform: rotate(0.5turn);
+    }
+
+    66% {
+        background-color: red;
+        transform: rotate(0.5turn);
+        font-size: 10rem;
+
+    }
+
+    100% {
+        background-color: blue;
+        transform: rotate(0.5turn);
+
+    }
+}
+
+.formRow {
+    margin-left: 1rem;
+    position: relative;
+}
+
+.formRow label {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input:focus + label {
+    font-size: 12px;
+    top: -8px;
+    left: 5px;
+    background-color: white;;
+}
+
+label {
+    color: gray;
+    transition: 0.5s ease-in;
+}
