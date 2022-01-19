@@ -1,0 +1,53 @@
+main{
+    display: grid;
+    row-gap: 1rem;
+}
+
+main > * {
+    padding: 1rem;
+}
+
+.orange {
+    background: orange;
+}
+
+.green {
+    background: green;
+}
+.blue {
+    background: blue;
+}
+.gray {
+    background: gray;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        /* nustatom, kad gridas susidarys is 2 stulpeliu */
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+    .orange, .green, .blue {
+        /* elementas prasides pirmo stulpelio pradzioj ir baigsis trecio pradzioj */
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        /* nustatom, kad gridas susidarys is 2 stulpeliu */
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .orange {
+        grid-column: span 6;
+    }
+    .green {
+        grid-column: span 12;
+    }
+    .blue {
+        grid-column: span 4;
+    }
+    .gray {
+        grid-column: span 3;
+    }
+}

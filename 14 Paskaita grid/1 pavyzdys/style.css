@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    grid-template-columns: 10rem 10rem auto auto 5rem;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header header"
+        "main . . . sidebar"
+        "main . . . sidebar"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer";
+    min-height: 100vh;
+}
+
+header {
+    background: orange;
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    background: cyan;
+}
+
+aside {
+    grid-area: sidebar;
+    background: pink;
+}
+
+footer {
+    align-items: ;
+    grid-area: footer;
+    background: greenyellow;
+}
+
+.freeDiv {
+    z-index: 1;
+    background: grey;
+    grid-column-start: 3;
+    grid-column-end: span sidebar-start;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
