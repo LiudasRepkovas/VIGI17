@@ -1,0 +1,116 @@
+body {
+    padding: 4rem 5.25rem 6.25rem;
+    box-shadow: 
+        inset 0 2rem lightgray, /* virsus */
+        inset 2rem 0 lightgray, /* kaire */
+        inset -2rem 0 lightgray, /* desine  */
+        inset 0 -2rem lightgray /* apacia */
+    ;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    padding-top: 2rem;;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header .breadCrumbs {
+    font-size: 0.7rem;
+    color: lightgray;
+}
+
+header .h1 {
+    font-size: 1.5rem;
+}
+
+header .sortAndFilter button {
+    padding: 0.7rem 1rem;
+    color: white;
+    background-color: rgb(238, 68, 78);
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+header .sortAndFilter .resultCount {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+header .sortAndFilter select {
+    border-radius: 0;
+    box-shadow: 0;
+    border: 0.125rem solid lightgray;
+    padding: 0.4rem;
+}
+
+header .sortAndFilter {
+    display: grid;
+    row-gap: 1rem;
+}
+
+
+main .item {
+    display: flex;
+    row-gap: 0.5rem;
+    flex-flow: row wrap;
+}
+
+main .item > * {
+    flex-basis: 100%;
+}
+
+main .item .type {
+    color: gray;
+    font-size: 0.75rem;
+}
+
+main .item .stars {
+    font-size: 0.9rem;
+}
+
+main .item .name {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+main .item .price{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+main .item .imageWrapper {
+    background: linear-gradient(315deg, rgba(0, 0, 0, 0.212) 0%, rgba(255,255,255,0) 50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .item .imageWrapper:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+main .item .imageWrapper img {
+    width: 80%;
+    box-shadow: 0 0 1rem gray;
+}
+
+/* uzduotis:  */
+
+
+@media screen and (min-width: ???px) {
+    main {
+        grid-template-columns: ???;
+    }
+    header {
+        grid-template-columns: ???;
+        grid-template-row: ???;
+    }
+}
