@@ -6,6 +6,10 @@
     background: yellow;
 }
 
+#vienas {
+
+}
+
 .raudonas h1 {
     color: blue;
 }
@@ -16,6 +20,8 @@
 
 .geltonas p {
     color:tomato;
+
+    width: 50%;
 }
 
 

@@ -1,0 +1,70 @@
+/* visus elementus */
+* {
+    margin: 4px;
+}
+
+
+/* pagal tipa */
+div {
+    border: .0625rem solid green;
+}
+
+/* pagal id */
+#kazkoksId {
+    background-color: cadetblue;
+}
+
+/* pagal klase */
+.kazkokiaKlase {
+    background-color: chartreuse;
+}
+
+/* pagal padeti teviniame elemente */
+div:nth-child(5) {
+    background-color: darkorange;
+}
+
+/* pagal attributa */
+input[type="text"] {
+    background-color: cornflowerblue;
+}
+
+/* selektorius galime grupuoti */
+input[type="password"],
+input[type="number"] {
+    background-color: darkmagenta;
+}
+
+/* selektorius galime kombinuoti */
+
+/* pagal giminystes rysi (visi palikuonys) */
+body p {
+    background-color:darkseagreen;
+}
+
+/* pagal giminystes rysi (tiesioginiai vaikai) */
+body > h1 {
+    background-color: deeppink;
+}
+
+/* pagal giminystes rysi (pasirinks 
+viena article elementa, jei jis eis 
+tiesiai po section elementu)  */
+
+section + article {
+    background-color:firebrick
+}
+
+/* pagal giminystes rysi (pasirinks 
+visus main elementus, jei jie eis 
+ po header elementu)  */
+
+header ~ main {
+    background-color: khaki;
+}
+
+
+input.homePhone[type="phone"] {
+    background-color: mediumblue;
+}
+

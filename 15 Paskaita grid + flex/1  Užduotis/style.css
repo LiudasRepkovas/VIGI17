@@ -15,6 +15,7 @@ main{
     padding-top: 2rem;;
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 header .breadCrumbs {
@@ -105,12 +106,36 @@ main .item .imageWrapper img {
 /* uzduotis:  */
 
 
-@media screen and (min-width: ???px) {
+@media screen and (min-width: 768px) {
     main {
-        grid-template-columns: ???;
+        grid-template-columns: 1fr 1fr;
     }
-    header {
-        grid-template-columns: ???;
-        grid-template-row: ???;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    header .sortAndFilter {
+        display: grid;
+        align-items: center;
+        justify-content: start;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    header .sortAndFilter button {
+        grid-column-start: 1;
+        grid-column-end: 3;    }
+    
+    header .sortAndFilter .resultCount {
+        grid-column-start: 3;
+        grid-column-end: 6;
+    }
+    
+    header .sortAndFilter select {
+        grid-column-start: 10;
+        grid-column-end: 13;
     }
 }

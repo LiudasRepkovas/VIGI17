@@ -1,0 +1,35 @@
+a {
+    display: block;
+    width: 12.5rem;
+    border-radius: .3125rem;
+    border: 1px solid rgb(255, 0, 212);
+    background-color: rgb(143, 95, 253);
+    text-align: center;
+    color: #fff;
+    line-height: 1.875rem;
+    text-decoration: none;
+    margin: .625rem
+}
+
+a:hover {
+    background-color: rgb(179, 65, 207);
+}
+
+a:active {
+    background-color: rgb(208, 77, 241);;
+}
+
+a:first-of-type {
+    background-color: mediumseagreen;
+    border: 1px solid greenyellow
+}
+
+a:first-of-type:hover {
+    background-color: rgb(115, 255, 110);
+}
+
+a:first-of-type:active {
+    background-color: rgb(44, 255, 37);
+}
+
+a:nth-child(2) {}
