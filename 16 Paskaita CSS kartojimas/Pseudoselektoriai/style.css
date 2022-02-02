@@ -31,5 +31,3 @@ a:first-of-type:hover {
 a:first-of-type:active {
     background-color: rgb(44, 255, 37);
 }
-
-a:nth-child(2) {}
