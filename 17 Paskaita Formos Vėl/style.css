@@ -2,3 +2,8 @@ input {
     border-radius: 0;
     border: 1px solid black;
 }
+
+form {
+    margin: 5px;
+    border: 1px solid black;
+}

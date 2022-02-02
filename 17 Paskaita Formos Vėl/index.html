@@ -15,17 +15,22 @@
     </form>
 
     <form action="./index.html">
-        <label for="data">Ivesk data:</label>
-        <input id="data" required name="data" type="date"/>
+        <div>
+            <label for="data">Ivesk data:</label>
+            <input id="data" required name="data" type="date"/>
+        </div>
+        <div>
+            <label for="check">Check</label>
+            <input name="check" id="check" type="checkbox"/> 
+        </div>
+        <div>
+            <label for="radioVyras">Vyras:</label>
+            <input type="radio" name="lytis" id="radioVyras" value="vyras">
+            <label for="radioMoteris">Moteris:</label>
+            <input type="radio" name="lytis" id="radioMoteris" value="moteris">
+        </div>
         <button type="submit">Submit</button>
 
-        <label for="check">Check</label>
-        <input name="check" id="check" type="checkbox"/> 
-
-        <label for="radioVyras">Vyras:</label>
-        <input type="radio" name="lytis" id="radioVyras" value="vyras">
-        <label for="radioMoteris">Moteris:</label>
-        <input type="radio" name="lytis" id="radioMoteris" value="moteris">
     </form>
 </body>
 </html>
