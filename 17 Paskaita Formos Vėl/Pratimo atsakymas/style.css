@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+.formWrapper {
+    width: 31.25rem;
+    margin: 1.25rem auto;
+    padding: .625rem;
+}
+
+
+.formRow {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: flex-end;
+}
+
+.formGroup {
+    flex-basis: 50%;
+}
+
+.formGroup.long {
+    flex-basis: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+textarea {
+    resize: vertical;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 6rem;
+}
+
+.red {
+    color: red
+}
+
+button {
+    width: auto;
+    padding: .8125rem 1.875rem;
+    border: none;
+    margin: 1rem auto;
+    background-color: black;
+    color: white;
+}
