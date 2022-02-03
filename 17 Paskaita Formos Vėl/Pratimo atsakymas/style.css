@@ -53,3 +53,22 @@ button {
     background-color: gray;
     color: white;
 }
+
+@media screen and (max-width: 31.25rem) {
+    .formWrapper {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .formRow {
+        flex-flow: row wrap;
+    }
+
+    .formGroup {
+        flex-basis: 100%;
+    }
+
+    .formGroup:last-child {
+        margin-top: 0.5rem;
+    }
+}
