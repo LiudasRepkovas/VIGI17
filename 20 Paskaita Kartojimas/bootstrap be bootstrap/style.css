@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 1.25rem;
+    max-width: 74rem;
+}
+
+header {
+    background-color: gray;
+}
+
+header .container, footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.hero .container {
+    text-align: center;
+}
+
+main section.gallery .container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+main section.gallery {
+    background-color: rgb(240, 240, 240);
+}
+
+main section.gallery .card {
+    background-color: white;
+}
+
+
+.card .thumbnail img{
+    width: 100%;
+}
+
+.card .cardBody {
+    padding: 1rem;
+}
+
+.card .cardFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .cardFooter .buttons {
+    display: flex;
+}
+
+.card .cardFooter .buttons button{
+    border: 1px solid gray;
+    border-radius:  0;
+}
+
+.card .cardFooter .buttons button:first-of-type{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.card .cardFooter .buttons button:last-of-type{
+    border-radius:  0 0.25rem .25rem 0 ;
+}
+
+@media screen and (min-width: 40rem) {
+    .card {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .card {
+        flex-basis: calc(33.33% - 2rem);
+    }
+}
