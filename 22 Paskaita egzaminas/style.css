@@ -1,0 +1,17 @@
+.imageWrapper img {
+  width: 275.69px;
+  margin-right: -100px;
+  margin-top: -40px;
+}
+
+.hero .text {
+  z-index: 1;
+  margin-right: -70px;
+}
+
+.hero {
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
