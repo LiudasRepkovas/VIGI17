@@ -1,6 +1,14 @@
+body {
+    overflow-x: hidden;
+}
+
+.container > * {
+    margin-top: 1rem;
+}
+
 .imageWrapper img {
   width: 275.69px;
-  margin-right: -100px;
+  margin-right: -120px;
   margin-top: -40px;
 }
 
@@ -14,4 +22,25 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+
+.scroll {
+    overflow-x: auto;
+    display: flex;
+    gap: 1rem
+}
+
+.square {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    background: black;
+}
+
+.background {
+    padding: 1rem;
+    background-image: url('./background.png');
+    background-size: cover;
+    background-position: center;
 }
